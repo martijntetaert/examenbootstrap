@@ -1,0 +1,162 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+* {
+    outline: 0 !important;
+}
+
+header {
+    background-color: #282a2e;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    transition: color, 0.4s;
+}
+
+.navbar-nav .active a, .navbar-nav li a:hover {
+    color: #799941;
+}
+
+.navbar-toggler .bar {
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #799941;
+    display: block;
+    transition: transform, 0.6s;
+}
+
+button[aria-expanded ="true"] .bar:first-of-type {
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+button[aria-expanded ="true"] .bar:nth-of-type(2) {
+    transform: translateX(100px);
+}
+
+button[aria-expanded ="true"] .bar:last-of-type {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.carousel-item .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 180px;
+    left: 150px;
+}
+
+.carousel-caption p {
+    font-size: 60px;
+    margin: 0;
+}
+
+.carousel-caption p.base-line {
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+#services, #portfolio {
+    background-color: #282a2e;
+}
+
+#services img {
+    transition: transform, 0.4s;
+}
+
+#services img:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    font-weight: 400;
+
+}
+
+h3 {
+    font-weight: 300;
+}
+
+#like {
+    background-color: #4b3f34;
+    padding: 150px 0;
+}
+
+#like h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#like button {
+    height: 47px;
+    width: 133px;
+    transition: opacity, 0.4s;
+}
+
+#like button:first-of-type {
+    background-color: #b0cd3b;
+    border-bottom: 3px solid #798f21;
+}
+
+#like button:last-of-type {
+    background-color: #1bbc9d;
+    border-bottom: 3px solid #1f937d;
+}
+
+#like button:hover {
+    opacity: 0.8;
+}
+
+#portfolio ul li a{
+    background-color: #313337;
+}
+
+#portfolio ul li a.active, #portfolio ul li a:hover{
+    background-color: #1bbc9d;
+}
+
+.kotje{
+    background-color: #313337;
+    height: 220px;
+    width: 220px;
+    padding: 30px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kotje:hover .inhoud{
+    transform: translateX(0px);
+}
+
+.inhoud{
+    transform: translateX(-200px);
+    transition: transform, 0.4s;
+}
+
+.inhoud header{
+    background-color: #232323;
+}
+
+
+.inhoud header h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.inhoud header p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.inhoud{
+    height: 100%;
+    background-color: #232323;
+}
